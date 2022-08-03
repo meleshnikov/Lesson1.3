@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         //task1();
-        task2();
+        //task2();
+        task3();;
     }
 
     public  static void task1(){
@@ -25,6 +26,16 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         } else if (clientOS == 0 && !deviceIsOld) {
             System.out.println("Установите версию приложения для iOS по ссылке");
+        }
+    }
+
+    public static void task3(){
+        int year = 2024;
+        boolean isLeapYear = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
+        if(isLeapYear){
+            System.out.println(year + " год является високосным");
+        } else{
+            System.out.println(year + " год не является високоснм");
         }
     }
 }
