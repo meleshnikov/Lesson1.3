@@ -3,7 +3,8 @@ public class Main {
         //task1();
         //task2();
         //task3();
-        task4();
+        //task4();
+        task5();
     }
 
     public  static void task1(){
@@ -46,5 +47,29 @@ public class Main {
         float distanceStep = 40f;
         int deliveryDays = dayStep * ((int)Math.ceil((deliveryDistance - 20) / distanceStep)) + 1;
         System.out.println("Потребуется дней: " + deliveryDays);
+    }
+
+    public  static  void  task5(){
+        int monthNumber = 5;
+        switch (monthNumber){
+            case 1:
+            case 2:
+            case 12: System.out.println(monthNumber + " - зима");
+                break;
+            case 3:
+            case 4:
+            case 5: System.out.println(monthNumber + " - весна");
+                break;
+            case 6:
+            case 7:
+            case 8: System.out.println(monthNumber + " - лето");
+                break;
+            case 9:
+            case 10:
+            case 11: System.out.println(monthNumber + " - осень");
+                break;
+            default: System.out.println("Такого месяца не существует");
+                break;
+        }
     }
 }
