@@ -2,7 +2,8 @@ public class Main {
     public static void main(String[] args) {
         //task1();
         //task2();
-        task3();;
+        //task3();
+        task4();
     }
 
     public  static void task1(){
@@ -37,5 +38,13 @@ public class Main {
         } else{
             System.out.println(year + " год не является високоснм");
         }
+    }
+
+    public  static  void  task4(){
+        int deliveryDistance = 95;
+        int dayStep = 1;
+        float distanceStep = 40f;
+        int deliveryDays = dayStep * ((int)Math.ceil((deliveryDistance - 20) / distanceStep)) + 1;
+        System.out.println("Потребуется дней: " + deliveryDays);
     }
 }
